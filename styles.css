@@ -1,0 +1,211 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+body{
+    font-family: 'Sriracha', cursive;
+    background-image: url(img/6197033.jpg);
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+  
+
+
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:1000px; }
+to {background-position: -100px 0px;background-size:1550px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:1000px; }
+to {background-position: -100px 0px;background-size:1550px;}
+
+}
+
+#coin-form{
+    box-shadow: rgba(16, 3, 73, 0.4) 5px 5px, rgba(11, 0, 71, 0.3) 10px 10px, rgba(8, 1, 51, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    background-color: rgba(128, 128, 128, 0.918);
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-left: auto;
+}
+.body-container{
+    
+    align-items: center;
+    display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.trade-container{
+margin-top: 10px;
+    margin-bottom: 70px;
+    width: 6rem;
+    height: 6rem;
+  justify-content: center;
+  animation-name: contacto;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
+    animation: trade-container 3s infinite;
+    
+}
+
+@keyframes trade-container {
+    0% {top: 0px;}
+    50% {top: 8px;}
+    100% {top: 0px;}
+  }
+
+.container{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
+    margin: 20px;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.418);
+align-items: center;
+    height: 120%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+#image-container{
+    text-shadow: #e5e7eb;
+    display: flex;
+flex-direction: column;
+    margin-left: 40%;
+   justify-items: center;
+    padding: 10px;
+    height: 25%;
+    width: 25%;
+    
+}
+
+
+
+.coin-input select{
+    font-family: 'Sriracha', cursive;
+    display: none;
+
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+  }
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+.coin-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.form-btn{
+    background-color: yellow;
+    border: 2px black solid;
+    height: 2rem;
+    width: 15rem;
+    border-radius: 2rem;
+}
+
+.coin-inputContainer{
+    
+    padding: 12px;
+}
+span{
+    font-size: large;
+}
+.coin-input{
+    font-family: 'Sriracha', cursive;
+    border: 3px solid yellow;
+    height: 2rem;
+    width: auto;
+    border-radius: 0.5rem;
+    background-color: rgb(196, 176, 0);
+    position: relative;
+
+    
+}
+
+
+
+
+
+
+
+.input-coin{
+    background-color: rgb(196, 176, 0); ;
+    border: 2px solid yellow;
+    height: auto;
+    width: auto;
+    border-radius: 2rem;
+
+}
+
+.hidden{
+    display: none;
+}
+.error{
+    font-size: 17px;
+    color: red;
+}
+
+@media screen and (max-width: 300px){
+    body{
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+    #image-container{
+       
+        height: 15rem;
+        width: 15rem;
+    }
+    .form-btn{
+        border: yellow 2px solid;
+        width: 10rem;
+    }
+    #coin-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
